@@ -1,1 +1,43 @@
+/* Style untuk header */
+
+header {
+
+  background-color: yellow;
+
+}
+
+/* Style untuk navigasi */
+
+nav {
+
+  background-color: gray;
+
+}
+
+/* Style untuk halaman-halaman */
+
+body {
+
+  background-color: white;
+
+  color: black;
+
+}
+
+/* Style untuk heading */
+
+h1, h2, h3, h4, h5, h6 {
+
+  color: black;
+
+}
+
+/* Style untuk link */
+
+a {
+
+  color: blue;
+
+}
+
 
