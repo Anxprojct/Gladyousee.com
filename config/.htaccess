@@ -1,1 +1,27 @@
+# Enable rewrite engine
+
+RewriteEngine On
+
+# Set the base path
+
+RewriteBase /
+
+# Remove .html extension from files
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect to HTTPS
+
+RewriteCond %{HTTPS} off
+
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prevent directory browsing
+
+Options -Indexes
+
 
